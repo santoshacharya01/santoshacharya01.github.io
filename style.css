@@ -1,42 +1,126 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #111111;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
-.container {
-    width: 70%;
-    margin: auto;
-    padding: 40px 0;
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 60px;
 }
 
-header {
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.intro {
+    flex: 1;
     text-align: center;
-    margin-bottom: 40px;
 }
 
-h1 {
-    margin-bottom: 5px;
+.intro h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-top: 40px;
+.intro h2 {
+    font-size: 19px;
+    margin: 5px 0;
 }
 
-.links a {
-    text-decoration: none;
+.intro p {
+    margin: 8px 0;
+}
+
+.contact-links a {
     color: #0066cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+.notice {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.profile-photo {
+    width: 180px;
+    text-align: right;
+}
+
+.profile-photo img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-top: 28px;
+}
+
+section h2 {
+    font-size: 26px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 6px;
+    margin-bottom: 16px;
+}
+
+ul, ol {
+    margin-top: 8px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.entry {
+    margin-bottom: 18px;
+}
+
+.entry p {
+    margin: 4px 0;
+}
+
+.date {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 footer {
-    text-align: center;
     margin-top: 50px;
-    color: #777;
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    .page {
+        padding: 25px 25px;
+    }
+
+    .top-section {
+        display: block;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
 }
