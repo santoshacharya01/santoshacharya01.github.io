@@ -1,126 +1,140 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
-    color: #111111;
+    color: #000000;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.45;
+    font-size: 16px;
 }
 
-.page {
-    max-width: 1200px;
+.container {
+    max-width: 1450px;
     margin: 0 auto;
-    padding: 35px 60px;
+    padding: 35px 75px;
 }
 
-.top-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+    text-align: center;
     margin-bottom: 35px;
 }
 
-.intro {
-    flex: 1;
-    text-align: center;
-}
-
-.intro h1 {
+header h1 {
     font-size: 34px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-weight: 700;
 }
 
-.intro h2 {
-    font-size: 19px;
-    margin: 5px 0;
+header h2 {
+    font-size: 20px;
+    margin: 0 0 14px 0;
+    font-weight: 700;
 }
 
-.intro p {
-    margin: 8px 0;
+header p {
+    margin: 6px 0;
 }
 
-.contact-links a {
+.links {
+    margin-top: 14px;
+}
+
+a {
     color: #0066cc;
     text-decoration: none;
-    font-weight: 500;
 }
 
-.contact-links a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 .notice {
-    margin-top: 15px;
+    max-width: 900px;
+    margin: 18px auto 10px auto;
     font-size: 15px;
-    color: #333333;
 }
 
-.profile-photo {
-    width: 180px;
-    text-align: right;
+.photo-box {
+    margin-top: 25px;
+    text-align: center;
 }
 
-.profile-photo img {
-    width: 160px;
-    height: 160px;
+.photo-box img {
+    width: 190px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #dddddd;
+    border: 1px solid #cccccc;
 }
 
 section {
-    margin-top: 28px;
+    margin-top: 30px;
 }
 
 section h2 {
     font-size: 26px;
-    border-bottom: 1px solid #cccccc;
+    margin: 0 0 16px 0;
     padding-bottom: 6px;
-    margin-bottom: 16px;
+    border-bottom: 1px solid #cfcfcf;
+    font-weight: 700;
+}
+
+section h3 {
+    font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 ul, ol {
-    margin-top: 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
 }
 
 li {
     margin-bottom: 5px;
 }
 
-.entry {
+.item {
     margin-bottom: 18px;
 }
 
-.entry p {
-    margin: 4px 0;
-}
-
 .date {
-    color: #666666;
-    font-size: 14px;
-    font-weight: bold;
+    color: #555555;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
 footer {
-    margin-top: 50px;
     text-align: center;
     color: #666666;
-    font-size: 14px;
+    margin-top: 45px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+footer a {
+    color: #0066cc;
 }
 
 @media screen and (max-width: 800px) {
-    .page {
-        padding: 25px 25px;
+    .container {
+        padding: 25px 22px;
     }
 
-    .top-section {
-        display: block;
-        text-align: center;
+    header h1 {
+        font-size: 28px;
     }
 
-    .profile-photo {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
+    section h2 {
+        font-size: 23px;
+    }
+
+    .photo-box img {
+        width: 160px;
+        height: 190px;
     }
 }
